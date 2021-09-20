@@ -1,3 +1,4 @@
+/*Actividad del dia 20-09*/ 
 (()=> {
     const $fetch = document.getElementById("fetch")
     $fragment = document.createDocumentFragment()
