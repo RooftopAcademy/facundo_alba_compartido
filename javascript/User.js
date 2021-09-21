@@ -4,6 +4,8 @@ class User{
         this._name = String
         this._email = String
         this._password = String
+        this._email = String
+        this.password = String
     }
 
     get id(){
