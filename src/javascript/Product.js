@@ -1,6 +1,6 @@
 
 class Product{
-    consructor(){
+    constructor(){
         this.id = Number
         this._name = String
         this._description = String

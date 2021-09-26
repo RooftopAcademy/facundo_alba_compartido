@@ -1,5 +1,5 @@
 
-class Customer {
+class Customer{
     constructor(){
         this._userName = String
     }
@@ -12,3 +12,4 @@ class Customer {
             this._userName = n
         } 
     }
+}
