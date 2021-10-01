@@ -173,6 +173,8 @@ body {
   margin: 10px;
   text-align: center;
   min-height: 325px;
+  width: 400px;
+  height: 460px;
 }
 .card-box-header {
   margin-top: 20px;
@@ -182,6 +184,17 @@ body {
 .card-box img {
   width: 400px;
   height: 300px;
+}
+.card-body{
+  margin: 10px;
+  text-align: left;
+}
+.card-description{
+  margin-top:10px;
+  color:rgb(100, 97, 97)
+}
+.card-price{
+  margin-top: 10px;
 }
 
 .navegacion {
@@ -275,11 +288,12 @@ body {
     display: flex;
     justify-content: space-around;
 }
-.btn-dark{
+.btn-comprar{
   background-color: rgb(41, 121, 47);
 }
-
-
+.btn-danger{
+  background-color: rgb(214, 60, 14);
+}
 .publicidad {
   background: #ffea85;
 }
