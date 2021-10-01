@@ -31,7 +31,8 @@
 
     </script>
     <title>First</title>
-  <script defer src="bundle.js"></script><script defer src="bundle.js"></script></head>
+    <script defer src="bundle.js"></script><script defer src="bundle.js"></script><script defer src="bundle.js"></script></head>
+
   <body>
     <div class="padre">
       <header class="header">
@@ -68,6 +69,70 @@
       <section id="root" class="container">
         
       </section>
+      <div class="container">
+        <h1>Shopping Cart</h1>
+        <hr />
+        <table class="cart-shopping">
+          <thead>
+            <tr>
+              <th scope="col" colspan="3">#</th>
+              <th scope="col" colspan="3">Item</th>
+              <th scope="col" colspan="3">Cantidad</th>
+              <th scope="col" colspan="">Acción</th>
+              <th scope="col" colspan="">Total</th>
+            </tr>
+          </thead>
+          <tbody id="items"></tbody>
+          <tfoot>
+            <tr id="footer">
+              <th scope="row" colspan="5">
+                No se agregaron productos al carrito
+              </th>
+            </tr>
+          </tfoot>
+        </table>
+        <div class="cards" id="cards"></div>
+  
+        <template id="template-card">
+          <div>
+            <div class="card-box">
+              <img />
+              <div class="card-body">
+                <h5 class="card-title" id="title">Pizza</h5>
+                <h6 class="card-description" id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+                <p class="card-text" id="price">$ <span>500</span></p>
+                <a href="#" class="btn btn-comprar">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </template>
+        <template id="template-footer">
+          <th scope="row" colspan="3">Total productos</th>
+          <td>10</td>
+          <td colspan="10">
+            <button class="btn btn-danger" id="vaciar-carrito">
+              vaciar todo
+            </button>
+          </td>
+          <td class="font-weight-bold">$ <span>5000</span></td>
+        </template>
+  
+        <template id="template-shopping-cart">
+          <tr>
+            <th scope="row" colspan="3">id</th>
+            <td colspan="3">Café</td>
+            <td colspan="3">1</td>
+            <td colspan="">
+              <button class="btn btn-comprar btn-info btn-sm">+</button>
+              <button class="btn btn-danger ">-</button>
+            </td>
+            <td colspan="5">$ <span>500</span></td>
+          </tr>
+        </template>
+      </div>
+      <div class="cards" id="cards"></div>
+
+      
       <footer class="footer">
         <nav class="pie"></nav>
       </footer>
