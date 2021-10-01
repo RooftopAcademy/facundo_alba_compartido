@@ -1,10 +1,10 @@
- import Home from "../../controllers/home"
- import Product from "../../controllers/product"
+ import Home from "../controllers/home"
+ import Product from "../controllers/product"
  
  let content :any = document.getElementById("root")
  
  
- const router = (route : any) =>{
+ const router = (route : string) =>{
  content.innerHTML = ''
     switch(route){
         case "":{

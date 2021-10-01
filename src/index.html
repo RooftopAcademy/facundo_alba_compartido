@@ -31,7 +31,7 @@
 
     </script>
     <title>First</title>
-  </head>
+  <script defer src="bundle.js"></script></head>
   <body>
     <div class="padre">
       <header class="header">
@@ -66,7 +66,7 @@
   
       <!-- MAIN CONTENT-->
       <section id="root" class="container">
-  
+        
       </section>
       <footer class="footer">
         <nav class="pie"></nav>
@@ -74,5 +74,14 @@
     </div>
 
     <script src="../src/javascript/app.js"></script>
+    <script>
+      function open(){
+        document.getElementById("window").style.display="block"
+      }
+      function close(){
+        document.getElementById("window").style.display="none"
+      }
+
+    </script>
   </body>
 </html>
