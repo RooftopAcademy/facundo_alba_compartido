@@ -1,39 +1,61 @@
   
 [
     {
-        "precio": 500,
+        "precio": 12.99,
         "id": 1,
-        "title": "Hamburguesa 1",
-        "url": "https://picsum.photos/id/0/600"
+        "title": "Pizza Vegano Deluxe",
+        "description": "Broccoli, Mushrooms, Bell pepper, Corn, Onion, Mozzarella, Parmesan",
+        "url": "https://cartzilla.createx.studio/img/food-delivery/restaurants/single/01.jpg"
     },
     {
-        "precio": 300,
+        "precio": 14.99,
         "id": 2,
-        "title": "Pizza",
-        "url": "https://picsum.photos/id/10/600"
+        "title": "Pizza Peperoni with Tomatoes",
+        "description":"Pepperoni, Tomatoes, Paprika, Chili, Mozzarella, Parmesan",
+        "url": "https://cartzilla.createx.studio/img/food-delivery/restaurants/single/02.jpg"
     },
     {
-        "precio": 100,
+        "precio": 15.99,
         "id": 3,
-        "title": "Agua",
-        "url": "https://picsum.photos/id/20/600"
+        "title": "Pizza with Salami and Olives",
+        "description":"Salami, Olives, Bell pepper, Mushrooms, Mozzarella, Parmesan",
+        "url": "https://cartzilla.createx.studio/img/food-delivery/restaurants/single/03.jpg"
     },
     {
-        "precio": 50,
+        "precio": 14.99,
         "id": 4,
-        "title": "Empanada",
-        "url": "https://picsum.photos/id/30/600"
+        "title": "Pizza Quattro Formaggi",
+        "description":"Mozzarella, Parmesan, Monterey Jack, Pecorino Romano, Asiago",
+        "url": "https://cartzilla.createx.studio/img/food-delivery/restaurants/single/04.jpg"
     },
     {
-        "precio": 10,
+        "precio": 10.99,
         "id": 5,
-        "title": "hamburguesa 2",
-        "url": "https://picsum.photos/id/40/600"
+        "title": "Pizza Margherita",
+        "description":"Mozzarella, Parmesan, Basil, Fresh tomatoes, Tomato sauce",
+        "url": "https://cartzilla.createx.studio/img/food-delivery/restaurants/single/05.jpg"
     },
     {
-        "precio": 150,
+        "precio": 15.99,
         "id": 6,
-        "title": "Pizza Especial",
-        "url": "https://picsum.photos/id/50/600"
+        "title": "Pizza with Minced Meat",
+        "description":"Minced meat, Bacon, Jalapeño, Mozzarella, Parmesan, Olives, Tomatoes",
+        "url": "https://cartzilla.createx.studio/img/food-delivery/restaurants/single/06.jpg"
+    },
+    {
+        "precio": 14.99,
+        "id": 6,
+        "title": "Pizza Hot Salami",
+        "description":"Salami, Chilli, Jalapeño, Mozzarella, Parmesan, Tomato sauce",
+        "url": "https://cartzilla.createx.studio/img/food-delivery/restaurants/single/07.jpg"
+    },
+    {
+        "precio": 16.99,
+        "id": 6,
+        "title": "Pizza with Grilled Meat",
+        "description":"Grilled meat, Tomatoes, Bell pepper, Onion, Mozzarella, Parmesan",
+        "url": "https://cartzilla.createx.studio/img/food-delivery/restaurants/single/08.jpg"
     }
+  
+    
 ]
