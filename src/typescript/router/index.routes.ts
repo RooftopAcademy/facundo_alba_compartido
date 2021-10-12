@@ -1,5 +1,7 @@
  import Home from "../controllers/home"
  import Product from "../controllers/product"
+ import Cart from "../controllers/cart"
+ import Profile from "../controllers/profile"
  
  let content :any = document.getElementById("root")
  
@@ -19,10 +21,13 @@
         case "#/location":
             return console.log("LOCATION")
         case "#/profile":
-            return console.log("PROFILE")
+            return content.appendChild(Profile())
 
         case "#/products":
             return content.appendChild(Product())
+
+        case "#/shoppingcart":
+            return content.appendChild(Cart())    
 
         default:
             return console.log("404")

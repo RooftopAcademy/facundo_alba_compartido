@@ -1,10 +1,6 @@
 export default () => {
     const views = `
-    <div class="principal2">
-    <div class="banner-text2">
-        <h2>Burgers & Fries</h2>
-   </div>
-</div>
+
     <section class="container">
     <div class="cards" >
       <div class="product-detail" id="window">
@@ -14,16 +10,15 @@ export default () => {
         <img src="https://cartzilla.createx.studio/img/food-delivery/restaurants/01.jpg">
        
         <div class="information">
-        
-        <h3 class="title">Combo 1</h3>
+          <h3 class="title">Combo 1</h3>
         <h5 class="description">Burgers, Salads, French fries, Drinks</h5>
         </div>
         <div class="box-price">
-             
-              <span class="price-1">$510</span>
-              <span class="price-2">$490</span>
-            
-            </div>
+         
+          <span class="price-1">$510</span>
+          <span class="price-2">$490</span>
+        
+        </div>
       </a>
       <a href="../paginas/products.html" class="card-box">
         <img alt="" src="https://cartzilla.createx.studio/img/food-delivery/restaurants/02.jpg">
@@ -91,7 +86,6 @@ export default () => {
         <h5 class="description">Grill, Steaks, Burgers, Salads, French fries, Drinks</h5>
         
       </a>
-      
     `;
     const divElemment = document.createElement('div')
     divElemment.innerHTML = views
