@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
 const fetchData = async() => {
     try{
-        const res= await fetch("../../store.json")
+        const res= await fetch("../../data/store.json")
         const data = await res.json()
         addStores(data)
         
