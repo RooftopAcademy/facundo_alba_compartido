@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
 const fetchData = async() => {
     try{
-        const res= await fetch("/data/api.json")
+        const res= await fetch("/data/products.json")
         const data = await res.json()
         addProducts(data)
         
