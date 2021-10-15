@@ -30,7 +30,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
 
     </script>
-    <title>Store</title>
+    <title>Products</title>
   
   <body>
    
@@ -68,25 +68,40 @@
   </head>
   <body>
     <div class="container">
-      <h1>Products</h1>
+      <h1>Pizzas</h1>
       <hr />
-      
+      <div class="cards" >
+        
       <div class="cards" id="cards"></div>
 
       <template id="template-card">
         <div>
+          
           <div class="card-box">
+        
             <img />
             <div class="card-body">
               <h5 class="card-title" id="title">Pizza</h5>
               <p class="card-text" id="price">$ <span>500</span></p>
-              <a href="#" class="btn btn-comprar">Comprar</a>
+              <a href="javascript:open()" class="btn btn-comprar">Ver Detalle</a>
             </div>
           </div>
+        </a>
         </div>
       </template>
+      <div class="product-detail" id="window">
+        <div id="close"><a href="javascript:close()"><img src="../../images/error.png" ></a></div>
+      </div>
       
     </div>
     <script src="/src/javascript/Product.js"></script>
+    <script>
+      function open(){
+        document.getElementById("window").style.display="block"
+      }
+      function close(){
+        document.getElementById("window").style.display="none"
+      }
+      </script>
   </body>
 </html>
