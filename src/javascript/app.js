@@ -14,6 +14,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
         addShoppingCart()
     }
 })
+items.addEventListener("click", e => {
+    addCart(e)
+})
 
 
 const fetchData = async() => {
@@ -44,6 +47,8 @@ const addProducts = data =>{
 }
 
 const addCart = e =>{
+    console.log(e.target)
+    console.log(e.target.classList.contains("btn-comprar"))
     if(e.target.classList.contains("btn-comprar")){
         setCart(e.target.parentElement)
     }
