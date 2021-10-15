@@ -31,9 +31,8 @@
 
     </script>
     <title>Shopping Cart</title>
-  
+ </head>
   <body>
-   
     <div class="padre">
       <header class="header">
           <nav class="nav">
@@ -48,8 +47,8 @@
               </label>
               
               <ul class="nav-menu" >
-                <li><a href="#/location" >Location</a></li>
-                <li><a href="#/categories">Categories</a></li>
+                <li ><a href="#/location " >Location</a></li>
+                <li><a href="#/categories" >Categories</a></li>
               </ul>
             
               <div class="icon">
@@ -64,13 +63,6 @@
               </div>
           </nav>
         </header>
-
-  </head>
-  <body>
-    
-    
-    
-    
     <div class="container">
       <h1>Shopping Cart</h1>
       <hr />
@@ -95,7 +87,18 @@
       </table>
       <div class="cards" id="cards"></div>
 
-      
+      <template id="template-card">
+        <div>
+          <div class="card-box">
+            <img />
+            <div class="card-body">
+              <h5 class="card-title" id="title">Pizza</h5>
+              <p class="card-text" id="price">$ <span>500</span></p>
+              <a href="#" class="btn btn-comprar btn-danger">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </template>
       <template id="template-footer">
         <th scope="row" colspan="3">Total productos</th>
         <td>10</td>
@@ -120,6 +123,6 @@
         </tr>
       </template>
     </div>
-    <script src="/src/javascript/User.js"></script>
+    <script src="/src/javascript/app.js"></script>
   </body>
 </html>
