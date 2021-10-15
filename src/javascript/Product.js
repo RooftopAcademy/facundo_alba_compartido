@@ -28,7 +28,7 @@ const fetchData = async() => {
 const addProducts = data =>{
     data.forEach(product => {
         templateCard.querySelector('h5').textContent = product.title
-        templateCard.querySelector("p").textContent = product.precio
+        templateCard.querySelector("span").textContent = product.precio
         templateCard.querySelector("img").setAttribute("src", product.url)
         templateCard.querySelector(".btn").dataset.id = product.id
 
