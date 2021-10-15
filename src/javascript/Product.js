@@ -30,7 +30,8 @@ const addProducts = data =>{
         templateCard.querySelector('h5').textContent = product.title
         templateCard.querySelector("span").textContent = product.precio
         templateCard.querySelector("img").setAttribute("src", product.url)
-        templateCard.querySelector(".btn").dataset.id = product.id
+        templateCard.querySelector(".btn-detalle").dataset.id = product.id
+        templateCard.querySelector(".btn-cart").dataset.id = product.id
         templateCard.getElementById("description").textContent = product.description
 
         const clone = templateCard.cloneNode(true)
@@ -41,7 +42,7 @@ const addProducts = data =>{
 }
 
 const addCart = e =>{
-    if(e.target.classList.contains("btn-comprar")){
+    if(e.target.classList.contains("btn-cart")){
         setCart(e.target.parentElement)
     }
     e.stopPropagation()
@@ -49,7 +50,7 @@ const addCart = e =>{
 
 const setCart = objeto =>{
     const producto ={
-        id: objeto.querySelector(".btn-comprar").dataset.id,
+        id: objeto.querySelector(".btn-cart").dataset.id,
         title: objeto.querySelector("h5").textContent,
         precio: objeto.querySelector("p").textContent,
         cantidad: 1
