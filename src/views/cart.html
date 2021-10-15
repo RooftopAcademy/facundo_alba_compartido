@@ -3,11 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../src/css/estilos.css" />
-    <title>Cart</title>
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-sacale=1.0, minumum-scale=1.0"
+    />
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/css/estilos.css">
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
+
+        integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w=="
+
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    </script>
+    <title>Shopping Cart</title>
+  
+  <body>
+   
+    <div class="padre">
+      <header class="header">
+          <nav class="nav">
+              <a href="#/">
+                <img src="https://cartzilla.createx.studio/img/logo-icon.png" class="logo">
+              </a>
+
+              <input type="checkbox" id="check">
+            
+              <label for="check" class="bar-btn" >
+              <i class="fa fa-bars"></i>
+              </label>
+              
+              <ul class="nav-menu" >
+                <li><a href="#/location" >Location</a></li>
+                <li><a href="#/categories">Categories</a></li>
+              </ul>
+            
+              <div class="icon">
+                
+                <i class="fas fa-search"></i>
+              </div>
+              <div class="icon">
+                <a href="#/profile"><i class="far fa-user"></i></i></a>
+              </div>
+              <div class="icon">
+                <a href="#/shoppingcart"><i class="fas fa-shopping-cart"></i></a>
+              </div>
+          </nav>
+        </header>
+
   </head>
   <body>
+    
+    
+    
+    
     <div class="container">
       <h1>Shopping Cart</h1>
       <hr />
@@ -32,18 +95,7 @@
       </table>
       <div class="cards" id="cards"></div>
 
-      <template id="template-card">
-        <div>
-          <div class="card-box">
-            <img />
-            <div class="card-body">
-              <h5 class="card-title" id="title">Pizza</h5>
-              <p class="card-text" id="price">$ <span>500</span></p>
-              <a href="#" class="btn btn-comprar">Comprar</a>
-            </div>
-          </div>
-        </div>
-      </template>
+      
       <template id="template-footer">
         <th scope="row" colspan="3">Total productos</th>
         <td>10</td>
