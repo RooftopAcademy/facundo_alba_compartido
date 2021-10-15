@@ -134,3 +134,4 @@ const btnAccion = e => {
         addShoppingCart()
     }
     e.stopPropagation()
+}
