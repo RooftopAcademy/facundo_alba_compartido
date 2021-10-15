@@ -81,17 +81,23 @@
         
             <img />
             <div class="card-body">
-              <h5 class="card-title" id="title">Pizza</h5>
-              <p class="card-text" id="price">$ <span>500</span></p>
-              <a href="javascript:open()" class="btn btn-comprar">Ver Detalle</a>
+              <h5 class="card-title text-color" id="title">Pizza</h5>
+              <p class="card-text text-color" id="price">$ <span>500</span></p>
+              <a href="javascript:open()" class="btn btn-detalle">Ver Detalle</a>
             </div>
           </div>
         </a>
         </div>
+        <div class="product-detail" id="window">
+          <div id="close"><a href="javascript:close()"><img src="../../images/error.png" ></a></div>
+          <div>
+            <h4 class="text-detail">Ingredientes</h4>
+            <h5 class="text-detail text-description" id="description">Aca van los ingredientes</h6>
+            <a href="" class="btn btn-cart">add to cart</a>
+          </div>
+        </div>
       </template>
-      <div class="product-detail" id="window">
-        <div id="close"><a href="javascript:close()"><img src="../../images/error.png" ></a></div>
-      </div>
+      
       
     </div>
     <script src="/src/javascript/Product.js"></script>
