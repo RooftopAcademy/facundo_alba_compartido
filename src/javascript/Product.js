@@ -1,15 +1,12 @@
 const cards = document.getElementById("cards")
 const items = document.getElementById("items")
-const footer = document.getElementById("footer")
 const templateCard = document.getElementById("template-card").content
 const fragment = document.createDocumentFragment()
 
 
 document.addEventListener("DOMContentLoaded", ()=>{
     fetchData()
-    
 })
-
 
 
 const fetchData = async() => {
