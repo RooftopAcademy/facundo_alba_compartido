@@ -38,7 +38,7 @@
     <div class="padre">
       <header class="header">
           <nav class="nav">
-              <a href="#/">
+              <a href="/src/index.html">
                 <img src="https://cartzilla.createx.studio/img/logo-icon.png" class="logo">
               </a>
 
@@ -50,7 +50,7 @@
               
               <ul class="nav-menu" >
                 <li ><a href="#/location " >Location</a></li>
-                <li><a href="#/categories" >Categories</a></li>
+                <li><a href="/src/index.html" >Categories</a></li>
               </ul>
             
               <div class="icon">
@@ -58,10 +58,10 @@
                 <i class="fas fa-search"></i>
               </div>
               <div class="icon">
-                <a href="#/profile"><i class="far fa-user"></i></i></a>
+                <a href="/src/views/profile.html"><i class="far fa-user"></i></i></a>
               </div>
               <div class="icon">
-                <a href="#/shoppingcart"><i class="fas fa-shopping-cart"></i></a>
+                <a href="/src/views/cart.html"><i class="fas fa-shopping-cart"></i></a>
               </div>
           </nav>
         </header>
@@ -76,8 +76,10 @@
         </div>
             <section class="container">
               <div class="cards" id="cards"></div>
-                <template id="template-card">
-                    <div>
+              
+              <template id="template-card">
+                <a href="/src/views/product.html">     
+                  <div>
                       
                       <div class="card-box">
                         <img id="img"/>
@@ -88,33 +90,20 @@
                         </div>
                       </div>
                     
-                    </div>
-                  </template>
+                  </div>
+                <a href="/src/views/product.html">   
+            </template>
+           
 
             </section>
             
-              
-              
-            
-             
-             
-            
-              
-      
+  
       <footer class="footer">
         <nav class="pie"></nav>
       </footer>
     </div>
 
     <script src="/src/javascript/Store.js"></script>
-    <script>
-      function open(){
-        document.getElementById("window").style.display="block"
-      }
-      function close(){
-        document.getElementById("window").style.display="none"
-      }
-
-    </script>
+   
   </body>
 </html>
