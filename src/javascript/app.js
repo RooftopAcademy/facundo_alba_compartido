@@ -1,3 +1,4 @@
+
 const cards = document.getElementById("cards")
 const items = document.getElementById("items")
 const footer = document.getElementById("footer")
@@ -14,14 +15,17 @@ document.addEventListener("DOMContentLoaded", ()=>{
         addShoppingCart()
     }
 })
-items.addEventListener("click", e => {
+
+cards.addEventListener("click", e =>{
     addCart(e)
 })
-
+items.addEventListener("click", e => {
+    btnAccion(e)
+})
 
 const fetchData = async() => {
     try{
-        const res= await fetch("/data/products.json")
+        const res= await fetch("../../data/products.json")
         const data = await res.json()
         addProducts(data)
         
@@ -31,13 +35,11 @@ const fetchData = async() => {
 }
 
 const addProducts = data =>{
-    console.log(data)
     data.forEach(product => {
         templateCard.querySelector('h5').textContent = product.title
-        templateCard.querySelector("span").textContent = product.precio
+        templateCard.querySelector("p").textContent = product.precio
         templateCard.querySelector("img").setAttribute("src", product.url)
-        templateCard.querySelector(".btn-danger").dataset.id = product.id
-        
+        templateCard.querySelector(".btn").dataset.id = product.id
 
         const clone = templateCard.cloneNode(true)
         fragment.appendChild(clone)
@@ -47,8 +49,6 @@ const addProducts = data =>{
 }
 
 const addCart = e =>{
-    console.log(e.target)
-    console.log(e.target.classList.contains("btn-comprar"))
     if(e.target.classList.contains("btn-comprar")){
         setCart(e.target.parentElement)
     }
@@ -134,5 +134,3 @@ const btnAccion = e => {
         addShoppingCart()
     }
     e.stopPropagation()
-
-}
