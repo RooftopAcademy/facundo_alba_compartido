@@ -31,6 +31,7 @@ const addProducts = data =>{
         templateCard.querySelector("span").textContent = product.precio
         templateCard.querySelector("img").setAttribute("src", product.url)
         templateCard.querySelector(".btn").dataset.id = product.id
+        templateCard.getElementById("description").textContent = product.description
 
         const clone = templateCard.cloneNode(true)
         fragment.appendChild(clone)
