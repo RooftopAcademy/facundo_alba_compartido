@@ -300,6 +300,12 @@ body {
   
   background-color: rgb(32, 187, 45);
 }
+.btn-comprar{
+  background-color: rgb(32, 187, 45);
+}
+.btn-danger{
+  background-color: rgb(199, 5, 5);
+}
 .cart-shopping{
     margin-top: 30px;
     display: flex;
