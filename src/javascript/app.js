@@ -99,7 +99,7 @@ const addFooter = () => {
     const nCantidad = Object.values(cart).reduce((acumulador, {cantidad}) => acumulador + cantidad, 0)
     const nPrecio = Object.values(cart).reduce((acumulador,{cantidad, precio}) => acumulador + cantidad * precio, 0)
     
-    templateFooter.querySelectorAll("td")[0].textContent = nCantidad
+    templateFooter.querySelectorAll("td")[1].textContent = nCantidad
     templateFooter.querySelector("span").textContent = nPrecio
 
     const clone = templateFooter.cloneNode(true)
